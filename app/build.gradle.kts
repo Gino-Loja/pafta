@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.pafta"
-    compileSdk = 33
+    compileSdk = 34 // Actualiza a la versión 34
 
     defaultConfig {
         applicationId = "com.example.pafta"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34 // Actualiza a la versión 34
         versionCode = 1
         versionName = "1.0"
 
@@ -36,7 +36,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
@@ -45,3 +44,4 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
