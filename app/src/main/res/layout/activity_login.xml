@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo_ini"
     tools:context=".Login">
-
 
 
     <LinearLayout
@@ -17,15 +17,14 @@
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
             android:layout_width="336dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_margin="15dp"
-           >
+            android:gravity="center">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/userEmail"
@@ -33,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
+                android:background="@drawable/view_reondeada"
                 android:inputType="textEmailAddress">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -45,9 +45,8 @@
             android:id="@+id/textInputLayout2"
             android:layout_width="336dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_margin="15dp"
-          >
+            android:gravity="center">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/userPassword"
@@ -57,6 +56,7 @@
                 android:layout_below="@id/userEmail"
 
                 android:hint="Password"
+                android:background="@drawable/view_reondeada"
                 android:inputType="textPassword"
                 app:layout_constraintBottom_toTopOf="@+id/loginButton">
 
@@ -69,10 +69,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Iniciar Sesión" />
+            android:backgroundTint="@color/botones"
+            android:text="Iniciar Sesión"
+
+            android:textColor="@color/white" />
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

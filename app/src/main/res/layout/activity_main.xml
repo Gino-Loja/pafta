@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo_ini"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/sessionGoogle"
-        android:layout_width="283dp"
-        android:layout_height="0dp"
+        android:layout_width="334dp"
+        android:layout_height="206dp"
         android:layout_marginTop="128dp"
         android:layout_marginBottom="225dp"
         android:contentDescription="@string/logoapp"
@@ -17,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465"
         app:srcCompat="@drawable/logo_app" />
 
     <Button
@@ -26,7 +28,11 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="376dp"
         android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/botones"
+
         android:hint="Login"
+        android:textColorHint="@color/white"
+
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,7 +47,11 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/botones"
+        android:textColorHint="@color/white"
         android:hint="Register"
+
+
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +64,10 @@
         android:layout_height="wrap_content"
 
         android:layout_marginBottom="157dp"
+
+        android:textColor="@color/white"
+
+        android:backgroundTint="@color/black"
 
         android:text="Iniciar Sesion con Google"
         app:layout_constraintBottom_toBottomOf="parent"
