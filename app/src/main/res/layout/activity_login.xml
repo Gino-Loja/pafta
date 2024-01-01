@@ -11,14 +11,23 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fotherImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <ImageView
 
+
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/headerimage"
+            android:layout_marginBottom="20dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
             android:layout_width="336dp"
@@ -31,8 +40,8 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
                 android:background="@drawable/view_reondeada"
+                android:hint="Email"
                 android:inputType="textEmailAddress">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -55,8 +64,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/userEmail"
 
-                android:hint="Password"
                 android:background="@drawable/view_reondeada"
+                android:hint="Password"
                 android:inputType="textPassword"
                 app:layout_constraintBottom_toTopOf="@+id/loginButton">
 
@@ -73,7 +82,20 @@
             android:text="Iniciar Sesión"
 
             android:textColor="@color/white" />
+
+
+
+
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/fotherImage"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fother"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

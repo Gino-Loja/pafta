@@ -14,10 +14,22 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fotherImageRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"
+
+            android:src="@drawable/headerimage"
+
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="336dp"
@@ -41,6 +53,7 @@
             android:layout_width="336dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:textColor="@color/black"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -51,7 +64,7 @@
                 android:hint="Email"
                 android:background="@drawable/view_reondeada"
                 android:inputType="textEmailAddress"
-
+                android:textColor="@color/black"
                 >
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -108,6 +121,16 @@
             />
 
     </LinearLayout>
+    <ImageView
+        android:id="@+id/fotherImageRegister"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/fother"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
