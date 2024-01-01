@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo_ini"
-    tools:context=".Register">
+    tools:context=".ui.register.Register">
 
     <LinearLayout
 
@@ -42,6 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="First Name"
+                android:textColor="@color/black"
+
                 android:background="@drawable/view_reondeada"
                 android:inputType="textPersonName">
 
@@ -83,6 +85,7 @@
                 android:hint="Password"
                 android:background="@drawable/view_reondeada"
                 android:inputType="textPassword"
+                android:textColor="@color/black"
 
                 >
 
@@ -102,6 +105,7 @@
                 android:hint="Confirm Password"
                 android:background="@drawable/view_reondeada"
                 android:inputType="textPassword"
+                android:textColor="@color/black"
 
                 >
 

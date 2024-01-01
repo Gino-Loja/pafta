@@ -1,4 +1,4 @@
-package com.example.pafta
+package com.example.pafta.ui.login
 
 import android.content.ContentValues.TAG
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.pafta.R
+import com.example.pafta.ui.home.Inicio
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase

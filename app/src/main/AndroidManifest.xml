@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Pafta"
         tools:targetApi="31">
         <activity
-            android:name=".Inicio"
+            android:name=".ui.home.Inicio"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".ui.register.Register"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".ui.login.Login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

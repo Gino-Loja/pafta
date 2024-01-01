@@ -2,4 +2,9 @@
     <string name="app_name">pafta</string>
     <string name="logoapp">pafta</string>
     <string name="default_web_client_id">408692777842-3r9cere8hrhd27p1k74rdam2po98e24e.apps.googleusercontent.com</string>
+    <string-array name="spinner_values">
+        <item>Sacha</item>
+        <item>Loreto</item>
+        <item>Orellana</item>
+    </string-array>
 </resources>

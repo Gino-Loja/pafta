@@ -1,4 +1,4 @@
-package com.example.pafta
+package com.example.pafta.ui.register
 
 import android.content.ContentValues.TAG
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.pafta.R
+import com.example.pafta.ui.login.Login
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
@@ -38,23 +40,38 @@ class Register : AppCompatActivity() {
     }
 
     private fun registrarOnclick() {
-        registerButton.setOnClickListener {
+        registerButton.setOnClickListener onClick@{
             val email = userEmailEditText.text.toString()
             val password = userPasswordEditText.text.toString()
             val confirmPassword = confirmPasswordEditText.text.toString()
             val userName = userNameEditText.text.toString()
+            if (!isValidEmail(email)) {
+                Toast.makeText(this, "Invalid email address", Toast.LENGTH_SHORT).show()
+                return@onClick
+            }
 
+            if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty() || userName.isEmpty()) {
+                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+                return@onClick
+
+            }
 
             if (password == confirmPassword) {
                 // Lógica para registrar un nuevo usuario con Firebase
                 createAccount(email, password)
+                return@onClick
             } else {
                 // Muestra un mensaje si las contraseñas no coinciden
                 Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
+                return@onClick
             }
+
         }
     }
-
+    private fun isValidEmail(email: String): Boolean {
+        val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+        return email.matches(emailPattern.toRegex())
+    }
     private fun createAccount(email: String, password: String) {
 
         // [START create_user_with_email]
