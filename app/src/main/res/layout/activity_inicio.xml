@@ -19,88 +19,115 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
 
 
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:scaleType="centerCrop"
-
-            android:src="@drawable/headerimage"
+            android:layout_width="230dp"
+            android:layout_height="213dp"
             android:layout_marginBottom="30dp"
-            />
+            android:src="@drawable/mapa" />
         <Spinner
             android:background="@color/botones"
             android:popupBackground="@color/botones"
             android:id="@+id/spinner"
             android:layout_width="300dp"
+
             android:layout_height="50dp"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+
+
             android:layout_marginTop="30dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="10dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Temperatura:"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:textSize="16sp"
+                    android:text="Temperatura: 40"
+                    android:padding="6dp"
+
                     android:layout_margin="10dp">
 
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Punto de rocío:"
+                    android:text="Punto de rocío: 1.890"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:padding="6dp"
+                    android:textSize="16sp"
                     android:layout_margin="10dp">
 
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RH:"
+                    android:text="RH: 34.7"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:padding="6dp"
+                    android:textSize="16sp"
                     android:layout_margin="10dp">
 
                 </TextView>
             </LinearLayout>
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Velocidad del viento:"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    android:text="Velocidad del viento: 45.9">
 
                 </TextView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Punto de rocío:"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    android:text="Punto de rocío: 1.67">
 
                 </TextView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Velocidad de ráfaga:"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    android:text="Velocidad de ráfaga: 34.9">
 
                 </TextView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dirección del viento:"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:background="@drawable/view_reondeada_variables"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    android:text="Dirección del viento: 23.8">
 
                 </TextView>
             </LinearLayout>
@@ -110,6 +137,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
             android:text="Ver prediccion">
 
         </Button>

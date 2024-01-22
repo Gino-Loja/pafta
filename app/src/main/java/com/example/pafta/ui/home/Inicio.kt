@@ -21,6 +21,7 @@ class Inicio : AppCompatActivity() {
         // Especifica el diseño del drop-down que se mostrará cuando el Spinner esté abierto
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         // Asigna el adaptador al Spinner
+
         spinner.adapter = adapter
 
 
