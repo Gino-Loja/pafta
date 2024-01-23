@@ -49,6 +49,8 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     // Also add the dependency for the Google Play services library and specify its version
     implementation("com.google.android.gms:play-services-auth:20.7.0")
+  // implementation ("org.quanqi:android-holo-graph:0.1.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
 }
 

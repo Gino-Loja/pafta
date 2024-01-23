@@ -1,12 +1,18 @@
 package com.example.pafta.ui.home
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.Spinner
 import com.example.pafta.R
+import com.example.pafta.ui.historial.Historial
+import com.example.pafta.ui.prediccion.Predicciones
 
 class Inicio : AppCompatActivity() {
+
+    lateinit var botonPrediccion:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
@@ -23,6 +29,13 @@ class Inicio : AppCompatActivity() {
         // Asigna el adaptador al Spinner
 
         spinner.adapter = adapter
+
+        botonPrediccion = findViewById(R.id.btn_prediccion)
+
+        botonPrediccion.setOnClickListener {
+            val intent = Intent(this, Predicciones::class.java)
+            startActivity(intent)
+        }
 
 
     }
