@@ -7,12 +7,14 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
 import com.example.pafta.R
+import com.example.pafta.ui.acercade.Acercade
 import com.example.pafta.ui.historial.Historial
 import com.example.pafta.ui.prediccion.Predicciones
 
 class Inicio : AppCompatActivity() {
 
     lateinit var botonPrediccion:Button
+    lateinit var btnAcercade:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
@@ -31,12 +33,17 @@ class Inicio : AppCompatActivity() {
         spinner.adapter = adapter
 
         botonPrediccion = findViewById(R.id.btn_prediccion)
-
+        btnAcercade = findViewById(R.id.btn_acercade)
         botonPrediccion.setOnClickListener {
             val intent = Intent(this, Predicciones::class.java)
             startActivity(intent)
+            finish()
         }
 
-
+        btnAcercade.setOnClickListener {
+            val intent = Intent(this, Acercade::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

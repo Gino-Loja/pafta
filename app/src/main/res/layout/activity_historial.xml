@@ -20,6 +20,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Spinner
+            android:id="@+id/spinnerHistorial"
+            android:layout_width="89dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/principal"
+            android:popupBackground="@color/principal">
+
+        </Spinner>
         <Button
             android:id="@+id/btnFechaInicio"
             android:layout_width="wrap_content"
@@ -107,8 +116,6 @@
                 android:text="Res"
                 android:textStyle="bold" />
         </TableRow>
-
-
         <TableRow>
 
             <TextView
@@ -185,7 +192,6 @@
                 android:text="Bueno" />
 
         </TableRow>
-
         <TableRow>
 
             <TextView
@@ -272,7 +278,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Inicio"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="@color/principal"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

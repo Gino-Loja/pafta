@@ -5,10 +5,12 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageView
 
 import com.example.pafta.R
 import com.example.pafta.ui.historial.Historial
+import com.example.pafta.ui.home.Inicio
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.components.XAxis
@@ -35,8 +37,14 @@ class Predicciones : AppCompatActivity() {
         findViewById<ImageView>(R.id.ivImagen).setOnClickListener {
             val intent = Intent(this, Historial::class.java)
             startActivity(intent)
+            finish()
         }
 
+        findViewById<Button>(R.id.bInicioPrediccion).setOnClickListener {
+            val intent = Intent(this, Inicio::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         lineChart = findViewById(R.id.chart)
         var descripcion: Description = Description()

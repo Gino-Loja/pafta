@@ -21,7 +21,6 @@
         android:id="@+id/linearLayout4"
         android:layout_width="407dp"
         android:layout_height="300dp"
-        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +30,8 @@
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/chart"
             android:layout_width="match_parent"
+            android:layout_margin="13dp"
+            android:background="@drawable/view_reondeada_variables"
             android:layout_height="match_parent">
 
         </com.github.mikephil.charting.charts.LineChart>
@@ -94,10 +95,10 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
-        android:id="@+id/bInicio"
+        android:id="@+id/bInicioPrediccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="@color/principal"
         android:text="INICIO"
         android:textColor="@color/black"
         android:textStyle="bold"

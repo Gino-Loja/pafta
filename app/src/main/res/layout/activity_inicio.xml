@@ -28,8 +28,8 @@
             android:layout_marginBottom="30dp"
             android:src="@drawable/mapa" />
         <Spinner
-            android:background="@color/botones"
-            android:popupBackground="@color/botones"
+            android:background="@color/principal"
+            android:popupBackground="@color/principal"
             android:id="@+id/spinner"
             android:layout_width="300dp"
 
@@ -134,14 +134,32 @@
 
 
         </LinearLayout>
-        <Button
-            android:id="@+id/btn_prediccion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Ver prediccion">
 
-        </Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_acercade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_marginRight="20dp"
+                android:text="acerca de">
+
+            </Button>
+            <Button
+                android:id="@+id/btn_prediccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Ver prediccion">
+
+            </Button>
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

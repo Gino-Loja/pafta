@@ -2,12 +2,9 @@
 <resources>
     <color name="fondo_ini">#9CB169</color>
     <color name="botones">#638E6A</color>
-
     <color name="principal">#007A6A</color>
     <color name="fondo_secu">#F8BE8D</color>
-
     <color name="white">#FFFFFF</color>
-
     <color name="black">#000000</color>
     <color name="purple_200">#9C27B0</color>
 
